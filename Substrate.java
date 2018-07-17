@@ -24,9 +24,8 @@ class Substrate{
           else {
             i = distanceApart / 2;
           } 
-          while (i < width){
-            latticePositions[row][i] = true;
-            i += distanceApart;
+          for (int j = i; j < width; j += distanceApart){
+            latticePositions[row][j] = true;
           }
         }
         return latticePositions;
